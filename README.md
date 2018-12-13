@@ -30,9 +30,13 @@ build20181213002 BUG修复
 此项目中的配置信息已经被删除。请分别填充完善以下文件夹/文件中的配置信息
 
 ADMIN/conf/ali_oss_conf_public.php
+
 ADMIN/conf/ali_oss_conf_private.php
+
 ADMIN/conf/mysql_conf.php
+
 ADMIN/conf/token_conf.php
+
 ASMIN/assets/ueditor/ueditor.all.js 中 httpsauth 的配置
 
 FRONT/conf.php
