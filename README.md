@@ -1,7 +1,7 @@
 # Wechat-Background
 It is about a platform for the the  practice of the knowledge of Chinese Communist 
 
-党知一练 1.0.0.1.Debug_Build20181213002
+党知一练 1.0.0.1.Debug_Build20181213003
 
 
 此版本为第一个迭代版本的Bug修复版本，具有如下基本功能：
@@ -42,6 +42,9 @@ build20181213002 BUG修复
 
 修复了客户端绑定用户数据出错的bug
 
+build20181213003 BUG修复
+
+修复在绑定用户时候出现+被http编码成空格的错误
 
 【配置信息】
 
