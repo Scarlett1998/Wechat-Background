@@ -130,7 +130,7 @@
   					var priavatekey=hex_md5(publickey+_openid+publickey);
   					xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   					var quesnum=1;
-  					xmlhttp.send("openid="+_openid+"&testid="+_testid+"&data[0]=MQ=="+"&data[1][quesid]="+_dataquesid+"&data[1][answer]="+_dataanswer+"&publickey="+publickey+"&privatekey="+priavatekey);
+  					ajax_base64_send(xmlhttp,"openid="+_openid+"&testid="+_testid+"&data[0]=MQ=="+"&data[1][quesid]="+_dataquesid+"&data[1][answer]="+_dataanswer+"&publickey="+publickey+"&privatekey="+priavatekey);
   					//data1=eval("("+xmlhttp.responseText+")");
   					if(option!=null)
   					{
@@ -151,7 +151,7 @@
   				var publickey=hex_md5(Date.parse(new Date()));
   				var priavatekey=hex_md5(publickey+_openid+_testid+publickey);
   				xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-  				xmlhttp.send("openid="+_openid+"&testid="+_testid+"&publickey="+publickey+"&privatekey="+priavatekey);
+  				ajax_base64_send(xmlhttp,"openid="+_openid+"&testid="+_testid+"&publickey="+publickey+"&privatekey="+priavatekey);
   				data=eval("("+xmlhttp.responseText+")");
   				console.log(data)
   				if(data['status']==203||data['status']==202)

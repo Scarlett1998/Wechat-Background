@@ -62,6 +62,7 @@ function Base64() {
    _keyStr.charAt(enc3) + _keyStr.charAt(enc4);
   }
   return output;
+  
  }
  // public method for decoding
  this.decode = function (input) {
@@ -528,4 +529,13 @@ function binb2b64(binarray) {
   }
  }
  return str;
+}
+
+
+//base64模式下使用AJAXPOST传输数据时对POST传输的数据进行格式化处理
+//避免出现+被转换成空格的情况
+function ajax_base64_send(xmlhttp,data)
+{
+	data=data.replace(/\+/g, "%2B");
+	xmlhttp.send(data);
 }

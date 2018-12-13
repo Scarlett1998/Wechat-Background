@@ -63,8 +63,8 @@
   			var publickey=hex_md5(Date.parse(new Date()));
   			var priavatekey=hex_md5(publickey+_openid+_userid+_username+publickey);
   			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-  			//xmlhttp.send("openid="+_openid+"&publickey="+publickey+"&privatekey="+priavatekey);
-  			xmlhttp.send("openid="+_openid+"&userid="+_userid+"&username="+_username+"&publickey="+publickey+"&privatekey="+priavatekey);
+  			//ajax_base64_send(xmlhttp,"openid="+_openid+"&publickey="+publickey+"&privatekey="+priavatekey);
+  			ajax_base64_send(xmlhttp,"openid="+_openid+"&userid="+_userid+"&username="+_username+"&publickey="+publickey+"&privatekey="+priavatekey);
   			var data;
   			data=eval("("+xmlhttp.responseText+")");
   			if(data['data']['userstate'])

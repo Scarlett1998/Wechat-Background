@@ -115,7 +115,7 @@
                   }
                   
             }
-  			xmlhttp.send("news="+news+"&publickey="+publickey+"&privatekey="+priavatekey);
+  			ajax_base64_send(xmlhttp,"news="+news+"&publickey="+publickey+"&privatekey="+priavatekey);
 		}
 		
 		function ajax_test()
@@ -148,7 +148,7 @@
                   }
                   
             }
-  			xmlhttp.send("openid="+_openid+"&publickey="+publickey+"&privatekey="+priavatekey);
+  			ajax_base64_send(xmlhttp,"openid="+_openid+"&publickey="+publickey+"&privatekey="+priavatekey);
 		}
 		
 		
@@ -164,7 +164,7 @@
   			var publickey=hex_md5(Date.parse(new Date()));
   			var priavatekey=hex_md5(publickey+_openid+publickey);
   			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-  			xmlhttp.send("openid="+_openid+"&publickey="+publickey+"&privatekey="+priavatekey);
+  			ajax_base64_send(xmlhttp,"openid="+_openid+"&publickey="+publickey+"&privatekey="+priavatekey);
   			
   			var data;
   			data=eval("("+xmlhttp.responseText+")");
