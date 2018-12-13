@@ -1,0 +1,27 @@
+.container
+{
+	padding-top: 150px;
+	align-items: center;
+	background-image: url(../img/check.png);
+}
+.button
+{
+	size: a5;
+}
+.firstbut
+{
+	padding-top: 50px;
+	align-items: center;
+}
+.secondbut
+{
+	padding-top: 300px;
+	align-items: center;
+}
+.button1
+{
+	color: darkgreen;
+	size:auto;
+	align-items: auto;
+	align-content: center;
+}

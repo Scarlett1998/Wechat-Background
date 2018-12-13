@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+		<meta charset="utf-8">
+		<title>党知一练--登录</title>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/amazeui.css" />
+		<style>
+			.load_square
+			{
+				width: 75%;
+				height: 60%;
+				border: solid 1px #CCCCCC;
+	            margin: 20px auto 0 auto;
+	            background: #FFFFFF;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap login_wrap">
+			<div class="content">
+				<div class="logo"></div>
+				<div class="login_box">	
+					
+					<div id="input_data" class="login_form" style="display: block;">
+						<div class="login_title">
+							登录
+						</div>
+						<form action="#" method="post">
+							
+							<div class="form_text_ipt">
+								<input id="username" name="username" type="text" placeholder="用户名">
+							</div>
+							<div class="ececk_warning"><span>用户名为空</span></div>
+							<div class="form_text_ipt">
+								<input id="password" name="password" type="password" placeholder="密码">
+							</div>
+							<div class="ececk_warning"><span>密码不能为空</span></div>
+							<div class="form_check_ipt">
+								<div class="left check_left">
+									<label><input name="" type="checkbox"> 下次自动登录</label>
+								</div>
+								<div class="right check_right">
+									<a href="index.php?mode=forget">忘记密码</a>
+								</div>
+							</div>
+							<div class="form_btn">
+								<button type="button" onclick="button_login()">登录</button>
+							</div>
+							<div class="form_reg_btn">
+								<span>还没有帐号？</span><a href="index.php?mode=reg">马上注册</a>
+							</div>
+						</form>
+						<div class="other_login">
+							<div class="left other_left">
+								<span>其它登录方式</span>
+							</div>
+							<div class="right other_right">
+								<a href="javascript:" onclick="Build_Wait();"><i class="fa fa-qq fa-2x"></i></a>
+								<a href="javascript:" onclick="Build_Wait();"><i class="fa fa-weixin fa-2x"></i></a>
+								<a href="javascript:" onclick="Build_Wait();"><i class="fa fa-weibo fa-2x"></i></a>
+							</div>
+						</div>
+					</div>	
+					<div id="input_wait" class="login_form" style="display: none;">
+						    <div class="login_title">
+							   加载中，请稍后...
+						    </div>
+						     <div class="am-progress am-progress-striped am-progress-sm am-active ">
+                                   <div id="load_per" class="am-progress-bar am-progress-bar-success"  style="width: 100%"></div>
+                             </div>
+                             <div class="load_square">
+                             	
+								<ul id="load_state">
+									
+								</ul>
+								</td></tr>
+							</div>
+							<div class="form_btn">
+								<button type="button" onclick="button_relogin()">重新登录</button>
+							</div>
+							<br/>
+					</div>	
+
+				</div>
+			</div>
+			<footer style="color: gray;font-size: smaller;text-align-last: center;">Copyright 2018 © iw3c.cc All Right Reserved.<br/><a href="http://http://www.miitbeian.gov.cn">苏ICP备16064625号-2</a>  </footer>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="assets/js/common.js" ></script>
+		<script type="text/javascript" src="assets/js/html/login.js"></script>
+	
+	</body>
+</html>
