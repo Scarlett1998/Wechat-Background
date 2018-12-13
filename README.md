@@ -21,6 +21,7 @@ It is about a platform for the the  practice of the knowledge of Chinese Communi
 6.查看服务器实时运行状态
 
 【客户端】
+
 1.绑定微信账号
 
 2.获取微信账号中的信息
@@ -43,6 +44,7 @@ build20181213002 BUG修复
 
 
 【配置信息】
+
 此项目中的配置信息已经被删除。请分别填充完善以下文件夹/文件中的配置信息
 
 ADMIN/conf/ali_oss_conf_public.php
