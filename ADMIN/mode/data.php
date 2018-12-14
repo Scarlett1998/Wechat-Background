@@ -137,10 +137,10 @@ else if($_GET['rtype']=="AJAX")
 	    $DATA['test'][$t]['testname']=$test['testname'];
 	    switch($teststate)
 	    {
-	    	case "RIGHT": $teststate="<span style=\"color:green\">回答正确</span>"; break;
+	        case "RIGHT": $teststate="<span style=\"color:green\">回答正确</span>"; break;
 	    	case "WRONG": $teststate="<span style=\"color:orange\">回答错误</span>";break;
-	    	case "READ": $teststate="<span style=\"color:orange\">正在答题/放弃答题</span>";break;
-	    	case "UNDO": $teststate="<span style=\"color:orange\">尚未答题</span>";break;
+	    	case "READ": $teststate="<span style=\"color:purple\">正在答题/放弃答题</span>";break;
+	    	case "UNDO": $teststate="<span style=\"color:red\">尚未答题</span>";break;
 	    }
 	    $DATA['test'][$t]['state']=$teststate;
 	    if($answer==null)$answer="-";
